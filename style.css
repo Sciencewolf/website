@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Secular One', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+  }
+
+body {
+    height: 97vh;
+    background: linear-gradient(0deg, 
+    rgba(34,193,195,1) 0%,
+     rgba(33,33,33,1) 100%);
+}
+
+
+/* Logo */
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    width: 10%;
+}
+
+/* nav bar */
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+
+    height: 4em;
+}
+
+@media (max-width: 800px) {
+    .nav, .main {
+        flex-direction: column;
+        justify-content: left;
+        align-items: flex-start;
+    }
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    width: 10%;
+    font-size: large;
+}
+
+.nav a:hover {
+    color:black;
+    transition: all .4s;
+}
+
+.nav > .btn-a {
+    width: 10%;
+    background-color: cadetblue;
+    border: 2px solid grey;
+    cursor: pointer;
+    transition: all .5s;
+    border: none;
+}
+
+.nav > .btn-a:hover {
+    background-color: greenyellow;
+    transition: all .4s;
+}
+
+h2 {
+    text-align: center;
+    color:white;
+}
+
+
+/* main content */
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+}
