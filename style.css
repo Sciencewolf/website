@@ -81,7 +81,11 @@ h2 {
 /* main content */
 .main {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     width: auto;
+}
+
+.main img {
+    cursor: pointer;
 }
