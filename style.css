@@ -81,11 +81,19 @@ h2 {
 /* main content */
 .main {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     width: auto;
+    height: 20vw;
+    border: 2px solid white;
 }
 
 .main img {
-    cursor: pointer;
+    user-select: none;
+}
+
+.btn-img-swipe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
