@@ -8,7 +8,7 @@ html{
   }
 
 body {
-    height: 97vh;
+    height: 100vh;
     background: linear-gradient(0deg, 
     rgba(34,193,195,1) 0%,
      rgba(33,33,33,1) 100%);
@@ -37,7 +37,7 @@ body {
     height: 4em;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
     .nav, .main {
         flex-direction: column;
         justify-content: left;
