@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "outFile": "script.js",
+    "outFile": "script/script.js",
     /* Visit https://aka.ms/tsconfig to read more about this file */
 
     /* Projects */
