@@ -1,7 +1,7 @@
 let arr: string[] = [
-    "https://raw.githubusercontent.com/Sciencewolf/website/master/download.png", 
-    "https://raw.githubusercontent.com/Sciencewolf/website/master/download2.png", 
-    "https://raw.githubusercontent.com/Sciencewolf/website/master/download3.png"
+    "/images/download.png", 
+    "/images/download2.png", 
+    "/images/download3.png"
 ]
 
 let count: number = 1
