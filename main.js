@@ -22,4 +22,5 @@ const getImages = () => {
         }
         count++;
     };
+    console.log("End");
 };
