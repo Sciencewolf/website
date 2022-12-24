@@ -14,6 +14,17 @@ body {
      rgba(33,33,33,1) 100%);
 }
 
+a {
+    text-decoration: none;
+}
+
+.main img {
+    width: 30%;
+    aspect-ratio: 3/2;
+    object-fit: cover;
+    transition: all .4s;
+    
+}
 
 /* Logo */
 .logo{
@@ -29,47 +40,40 @@ body {
 /* nav bar */
 .nav {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 2%;
-
-    height: 4em;
+    width: auto;
 }
 
-@media (max-width: 768px) {
-    .nav, .main {
-        flex-direction: column;
-        justify-content: left;
-        align-items: flex-start;
-    }
-}
-
-.nav a {
-    text-decoration: none;
+.link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 15%;
     color: white;
-    cursor: pointer;
-    width: 10%;
     font-size: large;
+    cursor: pointer;
 }
 
-.nav a:hover {
+.link:hover {
     color:black;
     transition: all .4s;
+    cursor: pointer;
 }
 
-.nav > .btn-a {
-    width: 10%;
+.btn-a {
+    width: 50%;
     background-color: cadetblue;
-    border: 2px solid grey;
-    cursor: pointer;
     transition: all .5s;
     border: none;
+    cursor: pointer;
 }
 
-.nav > .btn-a:hover {
+.btn-a:hover {
     background-color: greenyellow;
     transition: all .4s;
+    cursor: pointer;
 }
 
 h2 {
@@ -85,7 +89,6 @@ h2 {
     align-items: center;
     width: auto;
     height: 20vw;
-    border: 2px solid white;
 }
 
 .main img {
@@ -96,4 +99,30 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.btn-swipe {
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .nav, .main {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: flex-start;
+    }
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+    box-shadow: rgba(100, 50, 200, 42) 0px 3px 8px;
+}
+
+.footer > h4 {
+    color: white;
+    white-space:nowrap;
 }
