@@ -10,18 +10,14 @@ const getImages = () => {
     const getButton: any = document.getElementById('btn')
     let getImg: any = document.getElementById('pic') as HTMLImageElement | null
 
-    console.log('getImages', count)
-
     getButton.onclick = () => {
         if(count >= arr.length){
-            console.log("Error: Out of size")
+            // console.log("Error: Out of size")
             count = 0
         }
-        let source: any = `${arr[count]}`
-        console.log("Array", source)
-        console.log(getImg, "Current src")
+        let img_source: any = `${arr[count]}`
         if (getImg !== null){
-            getImg.src = source
+            getImg.src = img_source
         }
         count++
     }
